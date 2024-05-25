@@ -1,9 +1,10 @@
 import self from "../assets/self.png"
-import mock1 from "../assets/mock1.png"
-import mock2 from "../assets/mock2.png"
-import mock3 from "../assets/mock3.png"
-import mock4 from "../assets/mock4.png"
-import mock5 from "../assets/mock5.png"
+import mock1 from "../assets/multi-step-form-bymde.netlify.app_desktop.png"
+import mock2 from "../assets/interactive-comments-bymde.netlify.app_desktop.png"
+import mock3 from "../assets/news-dashboard-bymde.netlify.app_desktop.png"
+import mock4 from "../assets/ecommerce-product-bymde.netlify.app_desktop.jpeg"
+import mock5 from "../assets/rock-paper-scissors-bymde.netlify.app_desktop.jpeg"
+import mock6 from "../assets/agecalculatorappbymde.netlify.app.jpeg"
 
 import { Linkedin } from "lucide-react"
 import { Github } from 'lucide-react';
@@ -70,34 +71,40 @@ export const info = {
   ],
   portfolio: [ // This is where your portfolio projects will be detailed
     {
-      title: "Project 1",
-      live: "https://paytonpierce.dev", //this should be a link to the live version of your project, think github pages, netlify, heroku, etc. Or your own domain, if you have it.
-      source: "https://github.com/paytonjewell", // this should be a link to the **repository** of the project, where the code is hosted.
+      title: "Multi Step Form using ReactJS and Redux",
+      live: "https://multi-step-form-bymde.netlify.app/",
+      source: "https://github.com/muhammadderic/multi-step-form--FrontEndMentor",
       image: mock1
     },
     {
-      title: "Project 2",
-      live: "https://paytonpierce.dev",
-      source: "https://github.com/paytonjewell",
+      title: "Interactive Comments Site",
+      live: "https://interactive-comments-bymde.netlify.app/",
+      source: "https://github.com/muhammadderic/interactive-comments-section--FrontEndMentor",
       image: mock2
     },
     {
-      title: "Project 3",
-      live: "https://paytonpierce.dev",
-      source: "https://github.com/paytonjewell",
+      title: "News Homepage",
+      live: "https://news-dashboard-bymde.netlify.app/",
+      source: "https://github.com/muhammadderic/news-homepage--FrontEndMentor",
       image: mock3
     },
     {
-      title: "Project 4",
-      live: "https://paytonpierce.dev",
-      source: "https://github.com/paytonjewell",
+      title: "E-Commerce Product Page",
+      live: "https://ecommerce-product-bymde.netlify.app/",
+      source: "https://github.com/muhammadderic/e-commerce_product_page--FrontEndMentor",
       image: mock4
     },
     {
-      title: "Project 5",
-      live: "https://paytonpierce.dev",
-      source: "https://github.com/paytonjewell",
+      title: "Rock Paper Scissor",
+      live: "https://rock-paper-scissors-bymde.netlify.app/",
+      source: "https://github.com/muhammadderic/rock-paper-scissors--FrontEndMentor",
       image: mock5
-    }
+    },
+    {
+      title: "Age Calculator",
+      live: "https://agecalculatorappbymde.netlify.app/",
+      source: "https://github.com/muhammadderic/age-calculator-app--FrontEndMentor",
+      image: mock6
+    },
   ]
 }
