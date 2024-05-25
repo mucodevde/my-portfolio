@@ -8,23 +8,21 @@ import SocialIcon from "./SocialIcon";
 const Home: React.FC = () => {
   return (
     <div
-      className="flex flex-col md:flex-row items-center justify-center min-h-[calc(100vh-175px)]"
+      className="flex flex-col md:flex-row items-center justify-center"
     >
       <img
         src={self}
         alt="image of developer"
-        width={160}
-        height={160}
-        className="rounded-full p-3 mb-4 md:mb-0 md:mr-8"
+        className="w-4/6 sm:w-2/6 rounded-full p-3 mb-4 md:mb-0 md:mr-8"
       />
       <div
         className="text-center md:text-left"
       >
-        <h1>
-          Hi, I'm
-          <span>{info.firstName}</span>
+        <h1 className="font-bold text-2xl lg:text-4xl lg:my-2">
+          Hi, I'm {" "}
+          <span>{info.firstName} {info.lastName}</span>
         </h1>
-        <h2>
+        <h2 className="text-center lg:text-xl">
           I'm {info.position}.
         </h2>
         <div
@@ -39,7 +37,7 @@ const Home: React.FC = () => {
           ))}
         </div>
         <div
-          className="flex gap-6 justify-center md:justify-start text-2xl md:text-2.5xl"
+          className="mt-4 flex gap-6 justify-center text-2xl md:text-2.5xl"
         >
           {info.socials.map((social, index) => (
             <SocialIcon

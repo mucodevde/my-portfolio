@@ -16,19 +16,18 @@ export const singlePage = false;
 export const info = {
   firstName: "Muhammad",
   lastName: "Deric",
-  initials: "js", // the example uses first and last, but feel free to use three or more if you like.
   position: "a Full Stack Developer",
-  selfPortrait: self, // don't change this unless you want to name your self-portrait in the "img" folder something else!
+  selfPortrait: self,
   gradient: `-webkit-linear-gradient(135deg, ${colors})`, // don't change this either
   baseColor: colors[0],
-  miniBio: [ // these are just some "tidbits" about yourself. You can look at mine https://paytonjewell.github.io/#/ for an example if you'd like
+  miniBio: [
     {
       emoji: '☕',
-      text: 'fueled by coffee'
+      text: 'fueled by coffee :)'
     },
     {
       emoji: '🌎',
-      text: 'based in Indonesia'
+      text: 'based in Indonesia, Bandung City'
     },
     {
       emoji: "📧",
@@ -65,8 +64,8 @@ export const info = {
       emoji: '📖'
     },
     {
-      label: 'cooking',
-      emoji: '🌶'
+      label: 'coding',
+      emoji: '🌐'
     }
   ],
   portfolio: [ // This is where your portfolio projects will be detailed

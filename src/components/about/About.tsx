@@ -103,7 +103,7 @@ const About: React.FC = () => {
   );
 
   return (
-    <div className="flex flex-col items-center mt-12" id="about">
+    <div className="flex flex-col items-center mt-12">
       <Terminal text={aboutMeText()} />
       <Terminal text={skillsText()} />
       <Terminal text={miscText()} />

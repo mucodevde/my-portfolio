@@ -1,7 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 
-import { info, singlePage } from "../constants/info";
+import { singlePage } from "../constants/info";
 
 const links = [
   {
@@ -15,12 +15,6 @@ const links = [
     active: 'about'
   },
   {
-    name: info.initials,
-    type: 'initials',
-    to: '',
-    active: 'home'
-  },
-  {
     name: 'Portfolio',
     to: 'portfolio',
     active: 'portfolio'
@@ -29,25 +23,20 @@ const links = [
 
 const Navbar: React.FC = () => {
   return (
-    <nav>
+    <nav className="py-2 lg:py-4 shadow-md">
       <ul
-        className="flex justify-center items-center gap-8 text-sm lowercase md:gap-32"
+        className="flex justify-center items-center gap-8 text-md lowercase md:gap-32"
       >
         {
           links.map((link, index) => (
-            <li key={index}>
+            <li
+              key={index}
+              className="my-1 py-1 hover:-translate-y-0.5"
+            >
               <Link
                 to={singlePage ? `#${link.to}` : `/${link.to}`}
-              // scroll={el => scrollWidthOffset(el)}
-              // smooth
-              // onClick={() => setActive(link.active)} className={Style.link}
               >
-                {
-                  link.type ?
-                    <h1>{link.name}</h1>
-                    :
-                    <p className="py-2">{link.name}</p>
-                }
+                <p className="lg:text-lg">{link.name}</p>
               </Link>
             </li>
           ))

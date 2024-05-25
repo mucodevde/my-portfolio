@@ -18,11 +18,13 @@ const IconLink: React.FC<IconLink> = ({ title, link, icon }) => {
     >
       {
         icon === "code" ?
-          <CodeXml />
+          <CodeXml size={16} />
           :
-          <Globe />
+          <Globe size={16} />
       }
-      {title}
+      <span className="ml-2 text-sm lg:text-lg">
+        {title}
+      </span>
     </a>
   )
 }

@@ -7,11 +7,11 @@ interface EmojiButtonProps {
 
 const EmojiBullet: React.FC<EmojiButtonProps> = ({ emoji, text }) => {
   return (
-    <li className="text-base leading-tight cursor-default flex items-center">
+    <li className="flex items-center justify-center text-xs lg:text-md cursor-default">
       <span
         aria-label="emoji"
         role="img"
-        className="mr-2 md:mr-4 text-lg"
+        className="hidden sm:flex sm:mr-2 text-lg"
       >
         {emoji}
       </span>
