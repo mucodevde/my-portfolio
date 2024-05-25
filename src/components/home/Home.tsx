@@ -20,7 +20,7 @@ const Home: React.FC = () => {
       >
         <h1 className="font-bold text-2xl lg:text-4xl lg:my-2">
           Hi, I'm {" "}
-          <span>{info.firstName} {info.lastName}</span>
+          <span className="text-sky-500">{info.firstName} {info.lastName}</span>
         </h1>
         <h2 className="text-center lg:text-xl">
           I'm {info.position}.
