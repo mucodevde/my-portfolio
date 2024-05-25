@@ -17,7 +17,9 @@ const Home: React.FC = () => {
         height={160}
         className="rounded-full p-3 mb-4 md:mb-0 md:mr-8"
       />
-      <div>
+      <div
+        className="text-center md:text-left"
+      >
         <h1>
           Hi, I'm
           <span>{info.firstName}</span>
@@ -25,7 +27,9 @@ const Home: React.FC = () => {
         <h2>
           I'm {info.position}.
         </h2>
-        <div>
+        <div
+          className="p-3"
+        >
           {info.miniBio.map((bio, index) => (
             <EmojiBullet
               key={index}
@@ -34,7 +38,9 @@ const Home: React.FC = () => {
             />
           ))}
         </div>
-        <div>
+        <div
+          className="flex gap-6 justify-center md:justify-start text-2xl md:text-2.5xl"
+        >
           {info.socials.map((social, index) => (
             <SocialIcon
               key={index}
