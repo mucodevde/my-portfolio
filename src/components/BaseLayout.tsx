@@ -1,6 +1,7 @@
 import React from "react";
 
 import Navbar from "./Navbar";
+import MultiPageRoutes from "./MultiPageRoutes";
 
 const BaseLayout: React.FC = () => {
   return (
@@ -9,7 +10,9 @@ const BaseLayout: React.FC = () => {
         <div>
           <Navbar />
         </div>
-        <div></div>
+        <div className="flex-grow">
+          <MultiPageRoutes />
+        </div>
         <div></div>
       </div>
     </div>

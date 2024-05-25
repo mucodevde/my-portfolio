@@ -5,6 +5,10 @@ import mock3 from "../assets/mock3.png"
 import mock4 from "../assets/mock4.png"
 import mock5 from "../assets/mock5.png"
 
+import { Linkedin } from "lucide-react"
+import { Github } from 'lucide-react';
+import { Instagram } from 'lucide-react';
+
 export const colors = ["rgb(0,255,164)", "rgb(166,104,255)"];
 export const singlePage = false;
 
@@ -23,46 +27,29 @@ export const info = {
     },
     {
       emoji: '🌎',
-      text: 'based in the US'
-    },
-    {
-      emoji: "💼",
-      text: "Systems Engineer at Google"
+      text: 'based in Indonesia'
     },
     {
       emoji: "📧",
-      text: "johnsmith@gmail.com"
+      text: "mucodevde@gmail.com"
     }
   ],
   socials: [
     {
-      link: "https://facebook.com",
-      icon: 'fa fa-facebook',
-      label: 'facebook'
-    },
-    {
-      link: "https://instagram.com",
-      icon: 'fa fa-instagram',
-      label: 'instagram'
-    },
-    {
-      link: "https://github.com",
-      icon: "fa fa-github",
-      label: 'github'
-    },
-    {
       link: "https://linkedin.com",
-      icon: "fa fa-linkedin",
+      icon: Linkedin,
       label: 'linkedin'
     },
     {
-      link: "https://twitter.com",
-      icon: "fa fa-twitter",
-      label: 'twitter'
-    }
-    // Feel free to remove any of these that you don't have. I'll write an FAQ on how to add new ones later, let me know if you have a request for an icon!
-    // Just change the links so that they lead to your social profiles.
-
+      link: "https://github.com",
+      icon: Github,
+      label: 'github'
+    },
+    {
+      link: "https://instagram.com",
+      icon: Instagram,
+      label: 'instagram'
+    },
   ],
   bio: "Hello! I'm John. I'm a systems engineer for Google. I studied CompSci at Harvard, I enjoy long walks on the beach, and I believe artificial intelligence will inevitably rule us all one day. You should hire me!",
   skills:
